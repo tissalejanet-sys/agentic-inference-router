@@ -1,0 +1,17 @@
+{
+  "engines": [
+    {"name": "a", "url": "http://127.0.0.1:9001", "seats": 4},
+    {"name": "b", "url": "http://127.0.0.1:9002", "seats": 4}
+  ],
+  "policy": "prefix-affinity",
+  "prefix_messages": 2,
+  "queue_limit": 32,
+  "queue_timeout_s": 30,
+  "max_retries": 2,
+  "connect_timeout_s": 2,
+  "read_timeout_s": 600,
+  "health_interval_s": 5,
+  "health_path": "/v1/models",
+  "breaker_failures": 3,
+  "breaker_cooldown_s": 10
+}
